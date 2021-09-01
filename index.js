@@ -3,7 +3,7 @@ var launcher_translate = [0,0]
 function shoot(bullet,x){
 
     var animation = bullet.animate([
-            {transform: `translate(${x}px,-500px)` } // here the bullets x axis is fixed so that it can 
+            {transform: `translate(${x}px,-1200px)` } // here the bullets x axis is fixed so that it can 
         ],3000)
     animation.onfinish =() =>{
             document.body.firstElementChild.removeChild(bullet);
@@ -50,12 +50,11 @@ function checkKey(e){
     else if(e.keyCode == '40' && launcher_translate[1] > 0){
             launcher_translate[1] += speed;
     }
-    else if(e.keyCode == '37' && launcher_translate[0] >= -240){
+    else if(e.keyCode == '37' && launcher_translate[0] >= -700){
             launcher_translate[0] -= speed;
     }
-    else if(e.keyCode == '39' && launcher_translate[0] <= 200){
+    else if(e.keyCode == '39' && launcher_translate[0] <= 770){
             launcher_translate[0] += speed;
-    
     }
         
     console.log(launcher_translate[0])

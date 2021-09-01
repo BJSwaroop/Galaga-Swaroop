@@ -1,19 +1,16 @@
 body{
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-image: url(bg.png);
     background-size: cover;
     z-index: -1;
     overflow: hidden;
 }
 .container{
-  display: flex;
-    
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    width: 500px;
-    height: 500px;
-    margin: 40px auto;
-    border: 2px solid white;
-    background-color: black;
     overflow: hidden;
     
 }
@@ -30,9 +27,9 @@ body{
 .bullets {
     position: absolute;
     bottom: 35px;
-    left: 52.8%;
-    width: 10px;
-    height: 10px;
+    left: 50.8%;
+    width: 15px;
+    height: 15px;
     background: url("bullet.png");
     background-size: contain;
     background-repeat: no-repeat;
