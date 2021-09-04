@@ -6,13 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GALAGA</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="container">
-        <div class="aliens"></div>
+    <div class="start" id="start">
+        <h1>Welcome To Galaga!</h1>
+        <br>
+        <br>
+        <button class="btn">Instructions</button>
+        <br>
+        <div class="container0">
+            <a href="#container">
+
+                <button class="btn buy-btn" onclick="loader()">
+                    <span class="top content">Start Game</span>
+                    <span class="bottom content">Launch Spaceship</span>
+                </button>
+            </a>
+        
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="aliens a1"></div>
+        <div class="aliens a2"></div>
+        <div class="aliens a3"></div>
+        <div class="aliens a4"></div>
+        
+        <div class="aliens a1 row2"></div>
+        <div class="aliens a2 row2"></div>
+        <div class="aliens a3 row2"></div>
+        <div class="aliens a4 row2"></div>
+
+        <div class="aliens a1 row3"></div>
+        <div class="aliens a2 row3"></div>
+        <div class="aliens a3 row3"></div>
+        <div class="aliens a4 row3"></div>
         <div class="jet"></div>
         <script src="index.js"></script>
     </div>
-    <div class="points" id="points"></div>
+        <div class="dashboard">
+            <div class="restart" onclick="loader()"> <button class="btn small" > RESTART</button></div>
+            <div id="points"> </div>
+            <div class="endgame"><a href="#start"><button class="btn small"> GO To Home</button></a></div>
+        </div>
 </body>
 </html>

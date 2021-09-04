@@ -2,17 +2,70 @@ body{
     padding-left: 2rem;
     padding-right: 2rem;
     background-image: url(bg.png);
-    background-size: cover;
+    background-size: 100%;
     z-index: -1;
-    overflow: hidden;
+  overflow: hidden;
+  transition: all 1s;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+html{
+  scroll-behavior: smooth;
+}
+.start{
+  color: aliceblue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  padding: 2rem 4rem;
+  background-color: aquamarine;
+  color: black;
+  font-weight: bold;
+  cursor:pointer;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+.btn:hover{
+  background-color: chartreuse;
+}
+.content{
+  display: block;
+  position: relative;
+  transition: all 0.4s;
+
+}
+.container0 button{
+  height: 3rem;
+  overflow: hidden;
+}
+.top{
+  top: -0.7em;
+}
+.btn:hover .top{
+  top: -60px;
+}
+.bottom{
+  top: 50px;
+}
+.btn:hover .bottom{
+  top: -2em;
 }
 .container{
-    height: 95vh;
+  border: 1px solid white;
+  padding: 0 2rem;
+    height: 75vh;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
-    
+    margin-bottom: 3rem;
 }
 .jet{
     position: absolute;
@@ -23,6 +76,7 @@ body{
     background-repeat: no-repeat;
     left: 50%;
     bottom: 0px;
+    transition: all 0.1s;
 }
 .bullets {
     position: absolute;
@@ -35,6 +89,7 @@ body{
     background-repeat: no-repeat;
   }
   .aliens {
+    top: 0;
     width: 30px;
     height: 30px;
     background: url("alien1.svg");
@@ -43,9 +98,52 @@ body{
   }
   #points {
     position: absolute;
-    margin: 40px;
-    font-size: 5em;
+    font-size: 2rem;
     color: white;
     font-weight: bold;
-    left: 50%;
+  }
+  .dashboard{
+    border: 2px solid white;
+    background-color: black;
+    position: relative;
+    bottom: -11px;
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .big{
+    font-size: 1.5rem;
+    padding: 3rem 8rem;
+  }
+  .small{
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+  .a1{
+    position: fixed;
+    top: 2rem;
+    left: 10rem;
+
+  }  .a2{
+    position: fixed;
+    top: 2rem;
+    left: 30rem;
+  }  .a3{
+    position: fixed;
+    top: 2rem;
+    left: 50rem;
+    
+  }  .a4{
+    position: fixed;
+    top: 2rem;
+    left: 70rem;
+  }
+  .row2{
+    top:5rem;
+  }
+  .row3{
+    top: 8rem;
   }
